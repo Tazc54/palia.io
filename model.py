@@ -3,7 +3,8 @@ from typing import Optional, List
 from datetime import date
 
 
-@dataclass(frozen=True)
+#@dataclass(frozen=True)
+@dataclass(unsafe_hash=True)
 class OrderLine:
     orderid: str
     sku: str
